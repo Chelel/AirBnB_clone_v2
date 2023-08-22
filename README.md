@@ -1,3 +1,10 @@
+
+<center> <h3>Comments for your SQL file:</h3> </center>
+ `$ cat my_script.sql`
+-- first 3 students in the Batch ID=3
+-- because Batch 3 is the best!
+SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
+$``
 <center> <h1>HBNB - The Console</h1> </center>
 
 This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
