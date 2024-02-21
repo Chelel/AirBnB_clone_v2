@@ -17,7 +17,6 @@ class State(BaseModel, Base):
     else:
         name = ""
 
-    if models.is_type != 'db':
         @property
         def cities(self):
             cities_list = []
