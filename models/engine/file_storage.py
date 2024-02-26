@@ -47,8 +47,7 @@ class FileStorage:
         del FileStorage.__objects[key]
 
     def reload(self):
- 	"""deserializes the JSON file to __objects"""
-
+        """deserializes the JSON file to __objects"""
         try:
             temp = {}
             with open(FileStorage.__file_path, 'r') as f:
@@ -60,4 +59,4 @@ class FileStorage:
 
     def close(self):
         """Close for JSON"""
-       self.reload()
+        self.reload()
