@@ -7,7 +7,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@app.route('/airbnb-onepage/', strict_slashes=False)
 def hello_world():
     """ Returns some text. """
     return render_template("100-hbnb_filters.html")
